@@ -1,7 +1,7 @@
 import Button from "@material-ui/core/Button";
 import LinearProgress from "@material-ui/core/LinearProgress";
 import { useState, useEffect } from "react";
-import Head from "next/Head";
+import Head from "next/head";
 import axios from "axios";
 
 export default function Home(): JSX.Element {
@@ -16,7 +16,7 @@ export default function Home(): JSX.Element {
     }
   }, [progress]);
 
-  const playProgress = (e) => {
+  const playProgress = () => {
     setProgress(0);
     const audio = new Audio(
       "https://www.myinstants.com/media/sounds/cat-transcendence-limitless_mp3cut.mp3"
