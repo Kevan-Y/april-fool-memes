@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'New Tegomin', serif;
+  background: linear-gradient(17deg, #9cfffc 14%, #ffc4c4 73%);
+  background: -moz-linear-gradient(17deg, #9cfffc 14%, #ffc4c4 73%);
+  background: -webkit-linear-gradient(17deg, #9cfffc 14%, #ffc4c4 73%);
+  height: 100vh;
+  background-repeat: round;
 }
 
 a {
@@ -13,4 +19,74 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.main_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* margin-top: 5rem; */
+}
+
+.main {
+  margin-top: 5rem;
+}
+
+.button {
+  font-family: 'New Tegomin', serif !important;
+  font-size: 24px !important;
+  color: #6b6868 !important;
+  letter-spacing: 3px !important;
+  text-indent: 3px !important;
+  font-weight: 700 !important;
+  font-style: normal !important;
+  text-decoration: none !important;
+  padding: 3px 10px !important;
+  background: #f5f5fa !important;
+  text-shadow: 0px 2px 4px #919191 !important;
+  border: none !important;
+  box-shadow: 1px 2px 7px #e8e8e8 !important;
+  transition: 500ms ease-in-out !important;
+}
+
+.button:hover {
+  text-shadow: 0px 2px 13px #919191;
+  transform: scale(1.5);
+}
+
+.container {
+  text-align: center;
+}
+
+.img {
+  margin-top: 2rem;
+  /* height: 450px; */
+  width: 400px;
+  object-fit: fill;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.67);
+
+}
+
+h1,
+h3 {
+  padding: 2rem;
+  font-family: 'New Tegomin', serif;
+
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+  height: 13px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #edeffa;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: inset 7px 10px 12px #f0f0f0;
 }
