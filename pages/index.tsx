@@ -45,7 +45,7 @@ export default function Home(): JSX.Element {
             <LinearProgress variant="determinate" value={progress} />
           </>
         )}
-        {progress === 100 ? <h3>Data retreived from Nasa</h3> : null}
+        {progress === 100 ? <h3>Data retrieved from Nasa</h3> : null}
 
         {url && progress == 100 ? (
           <img src={url} className="img img-thumbnail"></img>
